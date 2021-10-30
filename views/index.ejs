@@ -1,0 +1,41 @@
+<%- include('common-header', title='Welcome to Cosmos Explorer'); -%>
+
+  <body>
+    <div class="text-center">
+      <h1 class="fw-bolder"><%= title %></h1>
+      <p class="fs-5 p-3">Choose a category and begin exploring!</p>
+    </div>
+
+    <div class="container">
+      <div class="row text-center mx-5">
+
+        <div class="col">
+          <a href="/clusters" class="btn btn-secondary">
+            <img src="/images/starclusters.png" class="rounded-1">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="/galaxies" class="btn btn-secondary">
+            <img src="/images/galaxies.png" class="rounded-1">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="/nebulae" class="btn btn-secondary">
+            <img src="/images/nebula.png" class="rounded-1">
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mt-5 text-center">
+      <a href="/" class="btn btn-info btn-lg">
+        Import Data from the NGC catalog
+      </a>
+    </div>
+    
+  </body>
+
+<%- include('common-footer'); -%>
